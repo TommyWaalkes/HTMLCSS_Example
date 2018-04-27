@@ -1,0 +1,164 @@
+p, h1,h2,h3
+{
+    font-family: "open sans";
+}
+
+P{
+    color: #69696a;
+}
+
+html{
+    font-size:16px;
+}
+
+h1, h2, h3{
+    font-size: 2rem;
+}
+
+.menuBar{
+    display: flex;
+    justify-content: space-between;
+    margin-right:10px;
+    margin-left:20px;
+}
+
+.content{
+    display: flex;
+}
+
+.links{
+    display: inline-flex;
+}
+
+.menuItem{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.blackButton{
+    background-color:#000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top:8px;
+}
+
+#HeaderText{
+    display: inline;
+}
+
+#ScrollButton{
+    width:90px;
+}
+
+#MainCopy{
+    border-left: #69696a 3px solid;
+    padding-left: 20px;
+}
+
+.dot{
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+#Peach{
+    background: rgba(247, 193, 162, 0.7);
+    width:120px;
+    height:120px;
+    bottom: 90px;
+    left: 100px;
+}
+
+#Pink{
+    background: rgba(247, 136, 167, 0.6);
+    width:150px;
+    height:150px;
+}
+
+#Lavendar{
+    background: rgba(207, 130, 213, 0.6);
+    width: 95px;
+    height: 95px;
+    right: 40px;
+    bottom: 50px;
+}
+
+#CircleContainer{
+    position: relative;
+    top: 90px;
+}
+
+.halfWidth{
+    width:50%;
+}
+
+.leftFLoat{
+    float: left;
+}
+
+.rightFloat{
+    float:right;
+}
+
+.clear{
+    clear: both;
+}
+
+body{
+    width: 70%;
+    background-color:#f9fafc;
+
+}
+
+.centerElement{
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.image{
+    width:25%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body{
+        width: 100%;
+    }
+
+    #Pink,#Peach,#Lavendar, #CircleContainer{
+        display: none;
+    }
+
+    #ScrollButton{
+        width:85%;
+    }
+
+    .menuBar{
+        display: block;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blackButton{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+    html{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1070px){
+    .dot{
+        display: none;
+    }
+}
+
